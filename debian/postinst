@@ -1,0 +1,7 @@
+#!/bin/bash
+
+ln -s /usr/share/pyshared/kgreg/conf/settings.py /etc/kgreg/settings.py 
+ln -s /usr/share/pyshared/kgreg/conf/ldap_attrs.py /etc/kgreg/ldap_attrs.py
+ln -s /usr/share/pyshared/kgreg/conf/urls.py /etc/kgreg/urls.py
+
+#DEBHELPER#
