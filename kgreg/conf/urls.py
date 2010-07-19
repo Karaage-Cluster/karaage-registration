@@ -36,5 +36,7 @@ urlpatterns += patterns('django.contrib.auth.views',
 
 if settings.DEBUG:
     urlpatterns += patterns('',
-        (r'^ingress_media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
+        (r'^kgreg_media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
     )
+
+execfile("/etc/karaage/registration_urls.py")
