@@ -1,7 +1,0 @@
-#!/bin/bash
-
-rm -f /etc/kgreg/settings.py
-rm -f /etc/kgreg/ldap_attrs.py
-rm -f /etc/kgreg/urls.py
-
-#DEBHELPER#

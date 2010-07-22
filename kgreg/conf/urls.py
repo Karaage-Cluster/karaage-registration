@@ -22,7 +22,6 @@ urlpatterns += patterns('',
     (r'^reports/', include('karaage.projectreports.urls.user')),
     (r'^requests/user/', include('karaage.requests.urls.user')),
     (r'^requests/projects/', include('karaage.requests.urls.projects')),
-    (r'xmlrpc/$', 'django_xmlrpc.views.handle_xmlrpc',),
     (r'^pbs/', include('django_pbs.servers.urls')),
     url(r'^captcha/', include('captcha.urls')),
 )
@@ -36,5 +35,7 @@ urlpatterns += patterns('django.contrib.auth.views',
 
 if settings.DEBUG:
     urlpatterns += patterns('',
-        (r'^ingress_media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
+        (r'^kgreg_media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
     )
+
+execfile("/etc/karaage/registration_urls.py")

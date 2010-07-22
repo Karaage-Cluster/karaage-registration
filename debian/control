@@ -2,12 +2,14 @@ Source: karaage-registration
 Section: python
 Priority: optional
 Maintainer: Sam Morrison <sam@vpac.org>
+Uploaders: Brian May <bam@debian.org>
 Build-Depends: debhelper (>=7.0.0), python (>= 2.4), python-support (>= 0.6), cdbs (>= 0.4.49)
 Standards-Version: 3.8.4
 
 Package: karaage-registration
 Architecture: all
 Homepage: http://trac.vpac.org/karaage/
-Depends: ${misc:Depends}, ${python:Depends}, karaage (>= 2.4), karaage-common (>=1.0)
+Depends: ${misc:Depends}, ${python:Depends}, karaage (>= 2.3.9), karaage-common (>=1.0)
+
 Description: Registration interface to karaage
  This package contains the registration web interface to Karaage.
