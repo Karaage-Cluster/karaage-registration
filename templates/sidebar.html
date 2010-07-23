@@ -4,7 +4,15 @@
     
     <h2>links</h2>
     <ul>
+{% if user.is_authenticated %}
+      <li><h3><a class="{% active request "profile/" %}" href="{% url kg_user_profile %}">My profile</a></h3></li>
       <li><h3><a class="{% active request "software/" %}" href="{% url kg_software_list %}">Software</a></h3></li>
+      <li><h3><a href="{% url kg_user_change_password %}">Change Password</a></h3></li>
+      <li><h3><a href="{% url logout %}">Log Out</a></h3></li>
+{% else %}
+      <li><h3><a class="{% active request "apply/" %}" href="{% url apply %}">Apply for account</a></h3></li>
+      <li><h3><a href="{% url login %}">Log In</a></h3></li>
+{% endif %}
       <li><h3><a class="{% active request "pbs/" %}" href="{% url pbs_server_list %}">PBS Servers</a></h3></li>
       {% if perms.machines.add_useraccount %}
         	  {% if request_count %}
