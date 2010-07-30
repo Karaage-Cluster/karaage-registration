@@ -16,4 +16,6 @@ MEDIA_URL = '/kgreg_media/'
 # Example: "/home/media/media.lawrence.com/"
 MEDIA_ROOT = '/usr/share/kgreg/media'
 
+AUP_URL = "/aup/"
+
 execfile("/etc/karaage/registration_settings.py")
