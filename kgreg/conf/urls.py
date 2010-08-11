@@ -7,7 +7,6 @@ urlpatterns = patterns('karaage.people.views.user',
     url(r'^profile/accounts/$', 'profile_accounts', name='kg_user_profile_accounts'),
     url(r'^profile/software/$', 'profile_software', name='kg_user_profile_software'),
     url(r'^profile/edit/$', 'edit_profile', name='kg_profile_edit'),
-    url(r'^login/$', 'login', name='login'),
     url(r'^change_password/$', 'password_change', name='kg_user_change_password'),
     url(r'^change_password/done/$', 'password_change_done', name='kg_user_password_done'),
 
