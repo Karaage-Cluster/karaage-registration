@@ -13,7 +13,6 @@
       <li><h3><a class="{% active request "apply/" %}" href="{% url apply %}">Apply for account</a></h3></li>
       <li><h3><a href="{% url login %}">Log In</a></h3></li>
 {% endif %}
-      <li><h3><a class="{% active request "pbs/" %}" href="{% url pbs_server_list %}">PBS Servers</a></h3></li>
       {% if perms.machines.add_useraccount %}
         	  {% if request_count %}
         	  <li><h3><a class="{% active request "requests/" %}" href="{% url kg_account_request_list %}">Account Requests</a> ({{ request_count }})</h3></li>

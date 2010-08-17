@@ -23,7 +23,6 @@ urlpatterns += patterns('',
     (r'^reports/', include('karaage.projectreports.urls.user')),
     (r'^requests/user/', include('karaage.requests.urls.user')),
     (r'^requests/projects/', include('karaage.requests.urls.projects')),
-    (r'^pbs/', include('django_pbs.servers.urls')),
     url(r'^captcha/', include('captcha.urls')),
 )
 
