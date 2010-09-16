@@ -23,6 +23,7 @@ urlpatterns += patterns('',
     url(r'^reports/', include('karaage.projectreports.urls.user')),
     url(r'^requests/user/', include('karaage.requests.urls.user')),
     url(r'^requests/projects/', include('karaage.requests.urls.projects')),
+    url(r'^applications/', include('karaage.applications.urls.user')),
     url(r'^captcha/', include('captcha.urls')),
     url(r'^usage/', include('karaage.usage.urls')),
 )
