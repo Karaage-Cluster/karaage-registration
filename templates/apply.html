@@ -11,44 +11,19 @@
 {% if user.is_authenticated %}
 <p>You already have an account! Why do you want another one?</p>
 {% else %}
-<p>Staff and students employed or enrolled at any of {{ org_name }}’s Member Universities
-may gain access to {{ org_name }}’s High Performance Computing Facilities at no additional
-cost, subject to approval by their University’s Operations Committee
-Member.</p>
 
-<p>Access may also be provided to Industry, however, is subject to an
-appropriate arrangement with {{ org_name }}. Interested persons should contact
-{{ accounts_email }}.</p>
+<h3>Join an existing project</h3>
+<p>To join an existing project, fill in the <a href="{% url user_registration %}">Account Form</a>.<p>
+<p>All accounts must be associated with a registered Project.</p>
 
-<p>As a Member of {{ org_name }}, each University has a pre-determined share of {{ org_name }}’s High
-Performance Computing capacity. Each University permits their share to be used
-by researchers and students conducting approved research consistent with the
-University's policies.</p>
+<h3>Start a new project</h3>
 
-<p>A staff or student who wishes to apply for an account will require a
-personal account and must be associated with a University approved Project. All
-Projects are approved by the respective University’s Operations Committee
-Member.</p>
+<p>If you cannot become part of an existing Project, fill in the <a href="{% url project_registration %}">Project Form</a></p>
 
-<p>Upon approval, authority is provided to the nominated Project Leader to
+<p>Upon approval, authority is provided to the nominated project leader to
 authorise personal accounts associated with the Project.</p>
 
-<p>To gain access:</p>
-
-<p>All users of {{ org_name }}’s High Performance Computing Facility must agree to the <a href="{% url aup %}">{{ org_name }} Acceptable Use Policy</a>.</p>
-<p>If you already have a {{ org_name }} Account, <a href="{% url login %}">login to view and edit your account details</a>.</p>
-<p>If you don't have a {{ org_name }} Account:</p>
-
-<ul>
-<li>To join an existing project, fill in the <a href="{% url user_registration %}">Account Form</a></li>
-<li>If you cannot become part of an existing Project, fill in the <a href="{% url project_registration %}">Project Form</a></li>
-</ul>
-
-<p>A personal account is required for each user wishing to access {{ org_name }}’s High
-Performance Computing Facility. You will be required to enter project
-identification details to link your account to the approved Project.</p>
-
-<p>Contact</p>
+<h3>Contact</h3>
 
 <p>Contact {{ accounts_email }} for further information.</p>
 {% endif %}
