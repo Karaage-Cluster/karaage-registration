@@ -1,6 +1,6 @@
 from django.conf.urls.defaults import *
 from django.conf import settings
-
+from django.contrib import admin
 
 urlpatterns = patterns('karaage.people.views.user',
     url(r'^profile/$', 'profile', name='kg_user_profile'),
@@ -15,7 +15,6 @@ urlpatterns = patterns('karaage.people.views.user',
 
 urlpatterns += patterns('',
     url(r'^$', 'django.views.generic.simple.direct_to_template', {'template': 'index.html'}, name='index'),
-    url(r'^apply/$', 'django.views.generic.simple.direct_to_template', {'template': 'apply.html'}, name="apply"),
     url(r'^aup/$', 'django.views.generic.simple.direct_to_template', {'template': 'aup.html'}, name="aup"),
     url(r'^users/', include('karaage.people.urls.user')),
     url(r'^institutes/', include('karaage.institutes.urls.user')),
@@ -28,6 +27,10 @@ urlpatterns += patterns('',
     url(r'^captcha/', include('captcha.urls')),
     url(r'^usage/', include('karaage.usage.urls')),
     url(r'^ajax_selects/', include('ajax_select.urls')),
+
+    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    url(r'^admin/', include(admin.site.urls)),  
+
 )
 
 urlpatterns += patterns('django.contrib.auth.views',

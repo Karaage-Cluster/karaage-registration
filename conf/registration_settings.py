@@ -6,3 +6,5 @@
 
 #LOGIN_REDIRECT_URL = '/kgreg/profile/'
 
+# Allow anyone to request an account
+#ALLOW_REGISTRATIONS = False

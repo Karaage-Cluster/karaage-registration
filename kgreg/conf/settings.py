@@ -22,5 +22,7 @@ AUP_URL = "/kgreg/aup/"
 
 LOGIN_REDIRECT_URL = '/kgreg/profile/'
 
+ALLOW_REGISTRATIONS = False
+
 execfile("/etc/karaage/registration_settings.py")
 

@@ -12,7 +12,7 @@
       <li><h3><a href="{% url logout %}">Log Out</a></h3></li>
       {% else %}
       <li><h3><a href="{% url login %}">Log In</a></h3></li>
-      <li><h3><a class="{% active request "apply/" %}" href="{% url apply %}">Apply for an account</a></h3></li>
+      <li><h3><a class="{% active request "applications/" %}" href="{% url kg_application_index %}">Apply for an account</a></h3></li>
       {% endif %}
     </ul>
   </div>
