@@ -4,8 +4,8 @@
     
     <h2>links</h2>
     <ul>
-      {% if user.is_authenticated %}
       <li><h3><a class="{% active request "$" %}" href="{% url index %}">Home</a></h3></li>
+      {% if user.is_authenticated %}
       <li><h3><a class="{% active request "profile/" %}" href="{% url kg_user_profile %}">My profile</a></h3></li>
       <li><h3><a class="{% active request "software/" %}" href="{% url kg_software_list %}">Software</a></h3></li>
       <li><h3><a class="{% active request "change_password/" %}" href="{% url kg_user_change_password %}">Change Password</a></h3></li>
