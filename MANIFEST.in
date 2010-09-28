@@ -5,3 +5,4 @@ include MANIFEST.in
 recursive-include media *
 recursive-include templates *
 recursive-include sbin *
+recursive-include conf *
