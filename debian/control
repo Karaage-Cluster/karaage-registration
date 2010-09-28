@@ -9,6 +9,6 @@ Standards-Version: 3.8.4
 Package: karaage-registration
 Architecture: all
 Homepage: http://trac.vpac.org/karaage/
-Depends: ${misc:Depends}, ${python:Depends}, karaage (>= 2.3.9), karaage-common (>=1.0)
+Depends: ${misc:Depends}, ${python:Depends}, karaage (>= 2.4.9), karaage-common (>=1.0)
 Description: Registration interface to karaage
  This package contains the registration web interface to Karaage.
