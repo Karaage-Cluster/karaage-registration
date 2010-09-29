@@ -24,5 +24,7 @@ LOGIN_REDIRECT_URL = '/kgreg/profile/'
 
 ALLOW_REGISTRATIONS = False
 
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
 execfile("/etc/karaage/registration_settings.py")
 
