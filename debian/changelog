@@ -1,5 +1,11 @@
+karaage-registration (1.0-1) testing; urgency=low
+
+  * First official release
+
+ -- Sam Morrison <sam@vpac.org>  Wed, 29 Sep 2010 16:05:25 +1000
+
 karaage-registration (0.1-1) UNRELEASED; urgency=low
 
-  * Initial release. 
+  * Initial release.
 
  -- Sam Morrison <sam@vpac.org>  Tue, 13 Jul 2010 14:34:57 +1000
