@@ -20,13 +20,13 @@ MEDIA_ROOT = '/usr/share/kgreg/media'
 
 GRAPH_URL = '/kgreg_graphs/'
 
-AUP_URL = "/kgreg/aup/"
-
 LOGIN_REDIRECT_URL = '/kgreg/profile/'
 
 ALLOW_REGISTRATIONS = False
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+TEMPLATE_CONTEXT_PROCESSORS += ('karaage.context_processors.registration',)
 
 execfile("/etc/karaage/registration_settings.py")
 
