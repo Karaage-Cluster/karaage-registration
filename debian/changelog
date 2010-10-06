@@ -1,3 +1,10 @@
+karaage-registration (1.0.1-1) testing; urgency=low
+
+  * Use new karaage context processor
+  * Remove AUP URL default as overrides global setting
+
+ -- Sam Morrison <sam@vpac.org>  Wed, 06 Oct 2010 14:41:10 +1100
+
 karaage-registration (1.0-1) testing; urgency=low
 
   * First official release
