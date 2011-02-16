@@ -28,5 +28,14 @@ SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 TEMPLATE_CONTEXT_PROCESSORS += ('karaage.context_processors.registration',)
 
+
+XMLRPC_METHODS = (
+    ('karaage.pbsmoab.xmlrpc.get_project', 'get_project',),
+    ('karaage.pbsmoab.xmlrpc.project_under_quota', 'project_under_quota',),
+    ('karaage.pbsmoab.xmlrpc.showquota', 'showquota',),
+    ('karaage.pbsmoab.xmlrpc.get_disk_quota', 'get_disk_quota',),
+    ('karaage.pbsmoab.xmlrpc.change_default_project', 'change_default_project',),
+)
+
 execfile("/etc/karaage/registration_settings.py")
 

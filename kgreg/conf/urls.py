@@ -27,7 +27,7 @@ urlpatterns += patterns('',
     url(r'^captcha/', include('captcha.urls')),
     url(r'^usage/', include('karaage.usage.urls')),
     url(r'^ajax_selects/', include('ajax_select.urls')),
-
+    url(r'xmlrpc/$', 'django_xmlrpc.views.handle_xmlrpc',),
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', include(admin.site.urls)),  
 
