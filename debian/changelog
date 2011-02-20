@@ -1,3 +1,10 @@
+karaage-registration (1.0.2) stable; urgency=low
+
+  * Base template
+  * XMLRPC interface
+
+ -- Sam Morrison <sam@vpac.org>  Mon, 21 Feb 2011 10:34:43 +1100
+
 karaage-registration (1.0.1-1) testing; urgency=low
 
   * Use new karaage context processor
