@@ -18,9 +18,8 @@ MEDIA_URL = '/kgreg_media/'
 # Example: "/home/media/media.lawrence.com/"
 MEDIA_ROOT = '/usr/share/kgreg/media'
 
-GRAPH_URL = '/kgreg_graphs/'
-
-LOGIN_REDIRECT_URL = '/kgreg/profile/'
+LOGIN_REDIRECT_URL = '/users/profile/'
+LOGIN_URL = '/users/accounts/login/'
 
 ALLOW_REGISTRATIONS = False
 
