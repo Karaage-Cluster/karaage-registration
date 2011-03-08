@@ -1,3 +1,10 @@
+karaage-registration (1.0.3-1) testing; urgency=low
+
+  * By default expects to be installed under /users/ in webserver
+  * SAML Login support
+
+ -- Sam Morrison <sam@vpac.org>  Tue, 08 Mar 2011 13:31:03 +1100
+
 karaage-registration (1.0.2-1) stable; urgency=low
 
   * Base template
