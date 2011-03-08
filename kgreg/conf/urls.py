@@ -16,6 +16,7 @@ urlpatterns = patterns('karaage.people.views.user',
 urlpatterns += patterns('',
     url(r'^$', 'django.views.generic.simple.direct_to_template', {'template': 'index.html'}, name='index'),
     url(r'^aup/$', 'django.views.generic.simple.direct_to_template', {'template': 'aup.html'}, name="aup"),
+    url(r'^samllogin/$', 'karaage.views.saml_login', name="kg_saml_login"),
     url(r'^users/', include('karaage.people.urls.user')),
     url(r'^institutes/', include('karaage.institutes.urls.user')),
     url(r'^projects/', include('karaage.projects.urls.user')),
@@ -32,9 +33,22 @@ urlpatterns += patterns('',
     url(r'^admin/', include(admin.site.urls)),  
 
 )
+from karaage.applications.saml import SAMLInstituteForm
+from karaage.people.models import Institute
+login_extra = {
+    'samlform': SAMLInstituteForm(),
+    'saml_enabled': Institute.active.filter(saml_entityid__isnull=False),
+}
+
+
+# Django 1.2.x doesn't support extra_context, is in 1.3
+urlpatterns += patterns('karaage.backports',
+    url(r'^accounts/login/$', 'login', {'extra_context': login_extra }, name='login'),
+
+)
 
 urlpatterns += patterns('django.contrib.auth.views',
-    url(r'^accounts/login/$', 'login', name='login'),
+#    url(r'^accounts/login/$', 'login', {'extra_context': login_extra }, name='login'),
     url(r'^accounts/logout/$', 'logout', name='logout'),
 
 )
