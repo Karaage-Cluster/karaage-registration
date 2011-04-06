@@ -105,7 +105,7 @@ data_files.append(
 setup(
     name = "karaage-registration",
     version = version,
-    url = 'http://trac.vpac.org/karaage/',
+    url = 'http://code.vpac.org/trac/karaage/',
     author = 'Sam Morrison',
     author_email = 'sam@vpac.org',
     description = 'Registration interface to karaage',
