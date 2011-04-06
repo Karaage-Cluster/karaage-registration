@@ -1,3 +1,9 @@
+karaage-registration (1.0.4-1) testing; urgency=low
+
+  * Minor changes to apache config
+
+ -- Sam Morrison <sam@vpac.org>  Wed, 06 Apr 2011 12:02:42 +1000
+
 karaage-registration (1.0.3-1) testing; urgency=low
 
   * By default expects to be installed under /users/ in webserver
