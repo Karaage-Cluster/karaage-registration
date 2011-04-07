@@ -2,9 +2,9 @@
 # Place local settings in here.
 # Will override default settings
 
-#AUP_URL = "/kgreg/aup/"
+#AUP_URL = "/users/aup/"
 
-#LOGIN_REDIRECT_URL = '/kgreg/profile/'
+#LOGIN_REDIRECT_URL = '/users/profile/'
 
 # Allow anyone to request an account
 #ALLOW_REGISTRATIONS = False
