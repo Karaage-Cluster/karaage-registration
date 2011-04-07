@@ -99,7 +99,8 @@ data_files =  media_files
 data_files.append(
     ('/etc/karaage', [
         'conf/registration_settings.py',
-        'conf/registration_urls.py' ])
+        'conf/registration_urls.py',
+        'conf/kgreg-apache.conf'])
 )
 
 setup(
