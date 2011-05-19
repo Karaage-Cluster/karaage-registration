@@ -2,7 +2,17 @@ from django.conf.urls.defaults import *
 from django.conf import settings
 from django.contrib import admin
 
-urlpatterns = patterns('karaage.people.views.user',
+
+urlpatterns = patterns('',
+)
+
+try:
+    execfile("/etc/karaage/registration_override_urls.py")
+except IOError:
+    pass
+
+
+urlpatterns += patterns('karaage.people.views.user',
     url(r'^profile/$', 'profile', name='kg_user_profile'),
     url(r'^profile/accounts/$', 'profile_accounts', name='kg_user_profile_accounts'),
     url(r'^profile/software/$', 'profile_software', name='kg_user_profile_software'),
