@@ -1,3 +1,9 @@
+karaage-registration (1.0.6-1) stable; urgency=low
+
+  * Allow urls to be overriden locally.
+
+ -- Sam Morrison <sam@vpac.org>  Wed, 25 May 2011 15:02:07 +1000
+
 karaage-registration (1.0.5-1) stable; urgency=low
 
   * Add apache config to /etc/karaage
