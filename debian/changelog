@@ -1,3 +1,11 @@
+karaage-registration (1.0.8-1) stable; urgency=low
+
+  * Password reset templates, PBS url
+  * KG Javascript included
+  * New WSGI script
+
+ -- Sam Morrison <sam@vpac.org>  Tue, 14 Feb 2012 10:45:40 +1100
+
 karaage-registration (1.0.7-1) testing; urgency=low
 
   * Minor changes due to karaage changes
