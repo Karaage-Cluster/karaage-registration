@@ -8,7 +8,12 @@
 <title>{% block title %}{% endblock %}&nbsp;|&nbsp;{% block site_name_title %}{% endblock %}</title>
 <meta name="author" content="{% block author %}Sam Morrison{% endblock %}"/>
 {% block favicon %}{% endblock %}
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/ajax_select.css"/>
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/jquery-ui.css"/>
 <script type="text/javascript">window.__admin_media_prefix__ = "{% filter escapejs %}{% admin_media_prefix %}{% endfilter %}";</script>
+<script type="text/javascript" src="{{ MEDIA_URL }}js/jquery.min.js"></script> 
+<script type="text/javascript" src="{{ MEDIA_URL }}js/jquery-ui.js"></script> 
+<script type="text/javascript" src="{{ MEDIA_URL }}js/ajax_select.js"></script> 
 {% block site_extrahead %}{% endblock %}
 {% block extrahead %}{% endblock %}
 </head>
