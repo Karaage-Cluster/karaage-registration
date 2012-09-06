@@ -51,15 +51,9 @@ login_extra = {
     'saml_enabled': Institute.active.filter(saml_entityid__isnull=False).exclude(saml_entityid=""),
 }
 
-
-# Django 1.2.x doesn't support extra_context, is in 1.3
-urlpatterns += patterns('karaage.backports',
-    url(r'^accounts/login/$', 'login', {'extra_context': login_extra }, name='login'),
-
-)
 from karaage.people.forms import SetPasswordForm
 urlpatterns += patterns('django.contrib.auth.views',
-#    url(r'^accounts/login/$', 'login', {'extra_context': login_extra }, name='login'),
+    url(r'^accounts/login/$', 'login', {'extra_context': login_extra }, name='login'),
     url(r'^accounts/logout/$', 'logout', name='logout'),
     url(r'^accounts/password_reset/done/$', 'password_reset_done', name='password_reset_done'),
     url(r'^accounts/reset/(?P<uidb36>[0-9A-Za-z]+)-(?P<token>.+)/$', 'password_reset_confirm', {'set_password_form': SetPasswordForm}, name='password_reset_confirm'),
