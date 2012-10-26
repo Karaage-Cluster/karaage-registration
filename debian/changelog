@@ -1,3 +1,10 @@
+karaage-registration (1.0.10-1) stable; urgency=low
+
+  * Remove ADMIN_MEDIA_PREFIX for Django 1.4.
+  * Take over packaging from Sam.
+
+ -- Brian May <bam@debian.org>  Fri, 26 Oct 2012 13:22:04 +1100
+
 karaage-registration (1.0.9-1) stable; urgency=low
 
   * Support django 1.4.
