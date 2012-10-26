@@ -11,7 +11,6 @@ SITE_ID = 2
 
 STATIC_ROOT = '/var/lib/karaage-registration/static'
 STATIC_URL = '/kgreg_media/'
-ADMIN_MEDIA_PREFIX = '/kgreg_media/admin/'
 
 LOGIN_REDIRECT_URL = '/users/profile/'
 LOGIN_URL = '/users/accounts/login/'
