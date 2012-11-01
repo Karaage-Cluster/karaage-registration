@@ -1,8 +1,12 @@
-{% load common %}
+{% extends "base_site.html" %}
+
+{% block coltype %}colSM{% endblock %}
+
+{% block sidebar %}
 <div id="content-related">
   <div class="module">
-    
-    <h2>links</h2>
+    {% load common %}
+    <h2>Quick links</h2>
     <ul>
       <li><h3><a class="{% active request "$" %}" href="{% url index %}">Home</a></h3></li>
       {% if user.is_authenticated %}
@@ -16,4 +20,19 @@
       {% endif %}
     </ul>
   </div>
+  {% block sidebar_extra %}
+  <div class="module">
+    <h2>Object links</h2>
+    {% block object-tools %}
+    {% endblock %}
+  </div>
+  {% endblock %}
 </div>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+{% block content_main %}
+{% endblock %}
+</div>
+{% endblock %}
