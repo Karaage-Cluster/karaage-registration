@@ -8,15 +8,15 @@
     {% load common %}
     <h2>Quick links</h2>
     <ul>
-      <li><h3><a class="{% active request "$" %}" href="{% url index %}">Home</a></h3></li>
+      <li><a class="{% active request "$" %}" href="{% url index %}">Home</a></li>
       {% if user.is_authenticated %}
-      <li><h3><a class="{% active request "profile/" %}" href="{% url kg_user_profile %}">My profile</a></h3></li>
-      <li><h3><a class="{% active request "software/" %}" href="{% url kg_software_list %}">Software</a></h3></li>
-      <li><h3><a class="{% active request "change_password/" %}" href="{% url kg_user_change_password %}">Change Password</a></h3></li>
-      <li><h3><a href="{% url logout %}">Log Out</a></h3></li>
+      <li><a class="{% active request "profile/" %}" href="{% url kg_user_profile %}">My profile</a></li>
+      <li><a class="{% active request "software/" %}" href="{% url kg_software_list %}">Software</a></li>
+      <li><a class="{% active request "change_password/" %}" href="{% url kg_user_change_password %}">Change Password</a></li>
+      <li><a href="{% url logout %}">Log Out</a></li>
       {% else %}
-      <li><h3><a href="{% url login %}">Log In</a></h3></li>
-      <li><h3><a class="{% active request "applications/" %}" href="{% url kg_application_index %}">Apply for an account</a></h3></li>
+      <li><a href="{% url login %}">Log In</a></li>
+      <li><a class="{% active request "applications/" %}" href="{% url kg_application_index %}">Apply for an account</a></li>
       {% endif %}
     </ul>
   </div>
