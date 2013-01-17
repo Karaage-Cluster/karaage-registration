@@ -25,8 +25,8 @@ urlpatterns += patterns('karaage.people.views.user',
 )
 
 urlpatterns += patterns('',
-    url(r'^$', 'django.views.generic.simple.direct_to_template', {'template': 'index.html'}, name='index'),
-    url(r'^aup/$', 'django.views.generic.simple.direct_to_template', {'template': 'aup.html'}, name="aup"),
+    url(r'^$', 'karaage.legacy.simple.direct_to_template', {'template': 'index.html'}, name='index'),
+    url(r'^aup/$', 'karaage.legacy.simple.direct_to_template', {'template': 'aup.html'}, name="aup"),
     url(r'^samllogin/$', 'karaage.views.saml_login', name="kg_saml_login"),
     url(r'^users/', include('karaage.people.urls.user')),
     url(r'^institutes/', include('karaage.institutes.urls.user')),
