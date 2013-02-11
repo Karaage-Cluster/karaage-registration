@@ -1,3 +1,10 @@
+karaage-registration (1.1.0-1) stable; urgency=low
+
+  * New version for Karaage 2.7.0.
+  * Support for Django 1.5.
+
+ -- Brian May <bam@debian.org>  Mon, 11 Feb 2013 13:28:11 +1100
+
 karaage-registration (1.0.10-1) stable; urgency=low
 
   * Remove ADMIN_MEDIA_PREFIX for Django 1.4.
