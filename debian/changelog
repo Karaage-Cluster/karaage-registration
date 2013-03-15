@@ -1,3 +1,9 @@
+karaage-registration (1.1.1-1) stable; urgency=low
+
+  * Fixes for Django 1.5.
+
+ -- Brian May <bam@debian.org>  Fri, 15 Mar 2013 15:34:46 +1100
+
 karaage-registration (1.1.0-1) stable; urgency=low
 
   * New version for Karaage 2.7.0.
