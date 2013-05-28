@@ -1,4 +1,4 @@
-karaage-registration (1.1.2-1) UNRELEASED; urgency=low
+karaage-registration (1.1.2-1) unstable; urgency=low
 
   * Use triggers for db migration.
   * Use python2 build method.
