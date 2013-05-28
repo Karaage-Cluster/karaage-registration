@@ -1,3 +1,9 @@
+karaage-registration (1.1.2-1) UNRELEASED; urgency=low
+
+  * Use triggers for db migration.
+
+ -- Brian May <bam@debian.org>  Tue, 28 May 2013 14:41:41 +1000
+
 karaage-registration (1.1.1-1) stable; urgency=low
 
   * Fixes for Django 1.5.
