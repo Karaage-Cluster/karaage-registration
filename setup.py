@@ -119,6 +119,7 @@ data_files.append(
     ('/etc/karaage', [
         'conf/registration_settings.py',
         'conf/registration_urls.py',
+        'conf/karaage-registration.wsgi',
         'conf/kgreg-apache.conf'])
 )
 
