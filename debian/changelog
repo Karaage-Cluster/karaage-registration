@@ -1,6 +1,7 @@
 karaage-registration (1.1.2-1) UNRELEASED; urgency=low
 
   * Use triggers for db migration.
+  * Use python2 build method.
 
  -- Brian May <bam@debian.org>  Tue, 28 May 2013 14:41:41 +1000
 
