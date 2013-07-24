@@ -45,7 +45,7 @@ urlpatterns += patterns('',
     url(r'^admin/', include(admin.site.urls)),
 )
 from karaage.applications.saml import SAMLInstituteForm
-from karaage.people.models import Institute
+from karaage.institutes.models import Institute
 login_extra = {
     'samlform': SAMLInstituteForm(),
     'saml_enabled': Institute.active.filter(saml_entityid__isnull=False).exclude(saml_entityid=""),
