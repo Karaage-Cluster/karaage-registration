@@ -12,26 +12,15 @@ except IOError:
     pass
 
 
-urlpatterns += patterns('karaage.people.views.user',
-    url(r'^profile/$', 'profile', name='kg_user_profile'),
-    url(r'^profile/accounts/$', 'profile_accounts', name='kg_user_profile_accounts'),
-    url(r'^profile/software/$', 'profile_software', name='kg_user_profile_software'),
-    url(r'^profile/projects/$', 'profile_projects', name='kg_user_profile_projects'),
-    url(r'^profile/edit/$', 'edit_profile', name='kg_profile_edit'),
-    url(r'^profile/', include('karaage.people.urls.profile')),
-
-)
-
 urlpatterns += patterns('',
     url(r'^$', 'karaage.legacy.simple.direct_to_template', {'template': 'index.html'}, name='index'),
     url(r'^aup/$', 'karaage.legacy.simple.direct_to_template', {'template': 'aup.html'}, name="aup"),
-    url(r'^users/', include('karaage.people.urls.user')),
+    url(r'^persons/', include('karaage.people.urls.user')),
+    url(r'^profile/', include('karaage.people.urls.profile')),
     url(r'^institutes/', include('karaage.institutes.urls.user')),
     url(r'^projects/', include('karaage.projects.urls.user')),
     url(r'^software/', include('karaage.software.urls.user')),
     url(r'^reports/', include('karaage.projectreports.urls.user')),
-    url(r'^requests/user/', include('karaage.requests.urls.user')),
-    url(r'^requests/projects/', include('karaage.requests.urls.projects')),
     url(r'^applications/', include('karaage.applications.urls.user')),
     url(r'^captcha/', include('captcha.urls')),
     url(r'^usage/', include('karaage.usage.urls.user')),
