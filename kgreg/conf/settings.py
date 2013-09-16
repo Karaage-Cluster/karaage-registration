@@ -18,7 +18,7 @@ ALLOW_REGISTRATIONS = False
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
-TEMPLATE_CONTEXT_PROCESSORS += ('karaage.context_processors.registration',)
+TEMPLATE_CONTEXT_PROCESSORS += ('karaage.common.context_processors.registration',)
 
 execfile("/etc/karaage/registration_settings.py")
 
