@@ -8,7 +8,7 @@ Standards-Version: 3.9.4
 Package: karaage3-registration
 Architecture: all
 Homepage: http://code.vpac.org/trac/karaage/
-Depends: ${misc:Depends}, ${python:Depends}, karaage3 (>= 3.0.0)
+Depends: ${misc:Depends}, ${python:Depends}, karaage3 (>= 3.0.1)
 Breaks: karaage-registration (<< 3.0.0)
 Replaces: karaage-registration (<< 3.0.0)
 Description: Registration interface to karaage
