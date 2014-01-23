@@ -126,9 +126,9 @@ data_files.append(
 setup(
     name = "karaage-registration",
     version = version,
-    url = 'http://code.vpac.org/trac/karaage/',
-    author = 'Sam Morrison',
-    author_email = 'sam@vpac.org',
+    url = 'https://github.com/Karaage-Cluster/karaage',
+    author = 'Brian May',
+    author_email = 'brian@vpac.org',
     description = 'Registration interface to karaage',
     packages = packages,
     cmdclass = cmdclasses,
