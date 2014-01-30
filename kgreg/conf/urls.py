@@ -25,7 +25,6 @@ urlpatterns += patterns('',
     url(r'^usage/', include('karaage.usage.urls.user')),
     url(r'^ajax_selects/', include('ajax_select.urls')),
     url(r'^xmlrpc/$', 'django_xmlrpc.views.handle_xmlrpc',),
-    url(r'^pbs/', include('django_pbs.servers.urls')),
 )
 
 if settings.DEBUG:
