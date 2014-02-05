@@ -1,3 +1,10 @@
+karaage3-registration (3.0.2-1) unstable; urgency=low
+
+  * Modifications to work with Karaage 3.0.2
+  * Add suggests header to package.
+
+ -- Brian May <bam@debian.org>  Wed, 05 Feb 2014 11:08:35 +1100
+
 karaage3-registration (3.0.1-1) unstable; urgency=low
 
   * Modifications to work with Karaage 3.0.1
