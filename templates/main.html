@@ -11,7 +11,6 @@
       <li><a class="{% active request "$" %}" href="{% url 'index' %}">Home</a></li>
       {% if user.is_authenticated %}
       <li><a class="{% active request "profile/" %}" href="{% url 'kg_user_profile' %}">My profile</a></li>
-      <li><a class="{% active request "software/" %}" href="{% url 'kg_software_list' %}">Software</a></li>
       <li><a class="{% active request "change_password/" %}" href="{% url 'password_change' %}">Change Password</a></li>
       <li><a class="{% active request "applications/" %}" href="{% url 'kg_application_list' %}">Pending Applications</a> {% if pending_applications %} ({{ pending_applications }}){% endif %}</li>
       <li><a href="{% url 'logout' %}">Log Out</a></li>
