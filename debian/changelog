@@ -1,3 +1,9 @@
+karaage3-registration (3.0.5-1) unstable; urgency=low
+
+  * Move sbin/kg-manage to manage.py in source.
+
+ -- Brian May <bam@debian.org>  Tue, 01 Apr 2014 11:49:58 +1100
+
 karaage3-registration (3.0.4-1) unstable; urgency=low
 
   * Update packaging to use setuptools.
